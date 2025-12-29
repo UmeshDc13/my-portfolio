@@ -6,17 +6,19 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-gray-800 text-white py-16">
-      <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-      <div className="flex flex-wrap gap-4 justify-center max-w-4xl mx-auto">
-        {skills.map((skill) => (
-          <span
+    <section className="bg-gray-900 text-white py-20">
+      <h2 className="text-3xl font-bold text-center mb-12">
+        Tech Stack
+      </h2>
+
+      <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-6">
+        {skills.map(skill => (
+          <div
             key={skill}
-			className="py-20"
-            //className="px-4 py-2 bg-gray-700 rounded-full text-sm"
+            className="bg-gray-800 py-4 rounded-lg text-center hover:bg-gray-700 transition"
           >
             {skill}
-          </span>
+          </div>
         ))}
       </div>
     </section>
